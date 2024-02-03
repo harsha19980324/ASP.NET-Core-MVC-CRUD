@@ -12,19 +12,15 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ASPNETMVCCRUD1</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Employees" asp-action="Index">EMPLOYEE_SYSTEM</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                        
+                        
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Employees" asp-action="Index">Employees</a>
                         </li>
@@ -41,11 +37,16 @@
             @RenderBody()
         </main>
     </div>
-
+    <br />
+    <br />
+    <br />
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - ASPNETMVCCRUD1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(255, 243, 249, 0.8);">
+            © 2024 Copyright:
+            <a class="text-dark" href="https://harsha19980324.github.io/Harsha-kunkuma-Blog/">Harsha_Kunkuma</a>
         </div>
+        <!-- Copyright -->
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
