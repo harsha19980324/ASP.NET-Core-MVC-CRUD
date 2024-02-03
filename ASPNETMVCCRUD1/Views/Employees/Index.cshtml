@@ -1,0 +1,35 @@
+﻿@model List<ASPNETMVCCRUD1.Models.Domain.Employee>
+
+@{
+}
+
+<center><h1>Employees</h1></center>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Salary</th>
+			<th>Date Of Birth</th>
+			<th>Department</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var employee in Model)
+		{
+		<tr>
+			<td>@employee.Id</td>
+			<td>@employee.Name</td>
+			<td>@employee.Email</td>
+			<td>@employee.Salary</td>
+			<td>@employee.DateOfBirth.ToString("dd-MM-yyyy")</td>
+			<td>@employee.Department</td>
+			<td><a href="Employees/View/@employee.Id">Update</a></td>
+@*				<td><button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Employees">Delete</button></td>
+*@		</tr>	
+		}
+	</tbody>
+</table>
